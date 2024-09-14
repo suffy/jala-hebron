@@ -1,4 +1,10 @@
-const categories = ["konseling", "beasiswa", "kemanusiaan", "pelayanan"];
+const categories = [
+  "konseling",
+  "beasiswa",
+  "kemanusiaan",
+  "pelayanan",
+  "other",
+];
 
 export const data = {
   categories,

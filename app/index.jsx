@@ -38,7 +38,7 @@ const WelcomeScreen = () => {
           end={{ x: 0.5, y: 1.3 }}
         />
         {/* content */}
-        <View style={styles.contentContaier}>
+        <View style={styles.contentContainer}>
           <Animated.Text
             entering={FadeInDown.delay(400).springify()}
             style={styles.title}
@@ -55,7 +55,7 @@ const WelcomeScreen = () => {
             entering={FadeInDown.delay(600).springify()}
             style={styles.startButton}
           >
-            <Pressable onPress={() => router.push("/home")}>
+            <Pressable onPress={() => router.push("/(tabs)/home")}>
               <Text style={styles.startText}>Start Explore</Text>
             </Pressable>
           </Animated.View>
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
     bottom: 0,
     position: "absolute",
   },
-  contentContaier: {
+  contentContainer: {
     flex: 1,
     justifyContent: "flex-end",
     alignItems: "center",
