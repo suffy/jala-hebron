@@ -5,6 +5,7 @@ import {
   StyleSheet,
   StatusBar,
   Pressable,
+  TouchableOpacity,
 } from "react-native";
 import React from "react";
 import { wp, hp } from "./../helpers/common";
@@ -55,9 +56,9 @@ const WelcomeScreen = () => {
             entering={FadeInDown.delay(600).springify()}
             style={styles.startButton}
           >
-            <Pressable onPress={() => router.push("/(tabs)/home")}>
+            <TouchableOpacity onPress={() => router.push("/(tabs)/home")}>
               <Text style={styles.startText}>Start Explore</Text>
-            </Pressable>
+            </TouchableOpacity>
           </Animated.View>
         </View>
       </Animated.View>
@@ -96,6 +97,10 @@ const styles = StyleSheet.create({
     letterSpacing: 1,
     marginBottom: 10,
     fontWeight: theme.fontWeights.medium,
+    // alignContent: "center",
+    // alignItems: "center",
+    // justifyContent: "center",
+    // display: "flex",
   },
   startButton: {
     marginBottom: 50,
